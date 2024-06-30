@@ -1,4 +1,5 @@
 import React from "react";
+import Task from "./Task";
 
 const PhotoList = () => {
   const photos = [
@@ -19,15 +20,14 @@ const PhotoList = () => {
   ];
 
   return (
-    <div>
-      <h3>Задание №1</h3>
+    <Task title="Задание №1">
       {photos.map((photo) => (
         <div key={photo.id}>
           <h3>{photo.title}</h3>
           <img src={photo.thumbnailUrl} alt={photo.title} />
         </div>
       ))}
-    </div>
+    </Task>
   );
 };
 

@@ -5,11 +5,16 @@ import Form from "./Form";
 
 function App() {
   return (
-    <div id="taskBox">
-      <PhotoList />
-      <Counter />
-      <Form />
-    </div>
+    <>
+      <header className="flex-center">
+        <h1>Вариант 1</h1>
+      </header>
+      <div id="taskBox">
+        <PhotoList />
+        <Counter />
+        <Form />
+      </div>
+    </>
   );
 }
 

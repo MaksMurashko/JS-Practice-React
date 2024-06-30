@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Task from "./Task";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -16,13 +17,12 @@ const Counter = () => {
   };
 
   return (
-    <div>
-      <h3>Задание №2</h3>
+    <Task title="Задание №2">
       <h2>Count: {count}</h2>
       <button style={buttonStyle} onClick={handleIncrement}>
         Increment
       </button>
-    </div>
+    </Task>
   );
 };
 

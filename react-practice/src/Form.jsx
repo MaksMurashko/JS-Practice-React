@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Task from "./Task";
 
 const Form = () => {
   const [inputValue, setInputValue] = useState("");
@@ -13,8 +14,7 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <h3>Задание №3</h3>
+    <Task title="Задание №3">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -24,7 +24,7 @@ const Form = () => {
         />
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </Task>
   );
 };
 
